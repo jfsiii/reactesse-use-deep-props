@@ -2,6 +2,7 @@ import type { EdgeProps } from 'vitedge'
 
 export default <EdgeProps>{
   async handler({ params }) {
+    console.log('props/[name] called');
     return {
       data: {
         message: `Hello from the API, ${params?.name || 'anonymous'}`,

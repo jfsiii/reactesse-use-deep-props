@@ -2,11 +2,11 @@ import type { EdgeProps } from 'vitedge'
 
 export default <EdgeProps>{
   async handler() {
-    console.log('props/index called');
+    console.log('props/[...all] called');
     return {
       data: {
         server: true,
-        message: 'Welcome to Reactesse Edge',
+        message: 'Catch all props',
       },
     }
   },
